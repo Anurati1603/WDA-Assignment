@@ -1,0 +1,66 @@
+#Question One
+status= ['g','G','n','n','n','N','g','G','g','N','G','G','N','g','n']
+graduates=status.count('g')+status.count('G')
+nongraduates=status.count('n')+status.count('N')
+percentofgrad= (graduates/len(status))*100
+percentofnongrad= (nongraduates/len(status))*100
+
+#Question 2
+books={'Harry Potter': 'Fantasy Fiction','Gone Girl':'Mystery'}
+movies={'Seabiscuit':'Drama/Sport','House of Wax':'Horror/Thriller'}
+video_games={'StardewValley':'Adventure', 'Fortnite':'Survival'}
+summer_items=[books,movies,video_games]
+
+for dictionaries in summer_items:
+for keys in dictionaries.keys():
+print(keys)
+
+for dictionaries in summer_items:
+for values in dictionaries.values():
+print(values)
+
+for dictionaries in summer_items:
+for keys,values in dictionaries.items():
+print(keys,values)
+
+del books['Gone Girl']
+print(books)
+
+summer_dict=dict[summer_items]
+
+movies.update({'Cruella':'Comedy'})
+print(summer_dict)
+
+movies[‘House of Wax’]
+
+summer_dict.clear()
+{}
+
+#Question 3 
+numbers=[3,5,9,20,30,55,102,123,174]
+
+print(numbers[4])
+
+print(sum(numbers))
+
+print((sum(numbers)/len(numbers)))
+
+result=1
+for number in numbers:
+    result*= number
+print(result)
+
+
+#Question 4
+for number in range(100):
+    if number%3==0 and number%5==0:
+        print('FizzBuzz')
+    elif number%3==0 and number%5!=0:
+        print('Fizz')
+    elif number%5==0 and number%3!=0:
+        print('Buzz')
+
+divbythree= [number for number in range(100) if number%3==0 and number%5!=0]
+divbyfive= [number for number in range(100) if number%5==0 and number%3!=0]
+divbyboth=[number for number in range(100) if number%3==0 and number%5==0]
+
