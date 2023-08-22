@@ -59,8 +59,21 @@ for number in range(100):
         print('Fizz')
     elif number%5==0 and number%3!=0:
         print('Buzz')
+divonlybythree=[]
+              
+for number in range(100):
+        if number%3==0 and number%5!=0:
+              divonlybythree.append(number)
+divonlybyfive=[]
+for number in range(100):   
+    if number%5==0 and number%3!=0:
+            divonlybyfive.append(number)
+divbyboth=[]
+for number in range(100):
+     if number%3==0 and number%5==0:
+            divbyboth.append(number)
+print(divonlybythree)
+print(divonlybyfive)
+print(divbyboth)
 
-divbythree= [number for number in range(100) if number%3==0 and number%5!=0]
-divbyfive= [number for number in range(100) if number%5==0 and number%3!=0]
-divbyboth=[number for number in range(100) if number%3==0 and number%5==0]
 
